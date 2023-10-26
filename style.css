@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Your Preferred Font', Arial, sans-serif;
+
+}
+body{
+    line-height:1.6;
+    
+    
+}
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 0 60px 0;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+    text-align: center;
+    
+
+}
+form{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:60px;
+}
+#serchinput {
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0,0,0.2);
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+#searchbutton{
+    padding:10px 20px;
+    background-color:#138065;
+    color:#fff;
+    border:none;
+    font-size:18px;
+    box-shadow:0 0 6px rgba(0, 0, 0,0,0.2);
+    cursor:pointer;
+    border-radius:5px;
+    margin-left:10px;
+
+
+
+
+}
+.searchre {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    max-width:100%
+    margin-bottom: 0 auto;
+    padding:20px;
+
+}
+
+.searchr{
+    
+    margin-bottom:50px;
+    width:30%;
+    height:100%;
+    border-radius:5px;
+    box-shadow:0 0 6px rgba(0,0,0,0.2);
+    overflow:hidden;
+    transition:opacity 0.2s ease-in-out;
+   
+
+}
+
+.searchr img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    transition:opacity 0.2s ease-in-out;
+   
+}
+.searchr:hover img{
+        opacity:0.8;
+
+    }
+
+.searchr a{
+    font-size:20px;
+    text-decoration:none;
+    color:#333;
+    padding:10px;
+    display:block;
+    text-transform:capitalize;
+
+}
+#showm {
+    padding: 10px 20px;
+    background-color: #008cba;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 30px auto;
+    display: block;
+    display: none;
+} 
+
+
+
+@media screen and (max-width:768px){
+    .searchr{
+        padding:20px;
+    }
+    .searchr {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:480px){
+    .searchr{
+        width:100%;
+    }
+}
